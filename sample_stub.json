@@ -1,0 +1,12 @@
+{
+    "http-request": {
+        "method": "POST",
+        "path": "/square",
+        "body": 10
+    },
+
+    "http-response": {
+        "status": 200,
+        "body": 100
+    }
+}
