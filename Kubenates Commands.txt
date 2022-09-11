@@ -1,0 +1,46 @@
+DockerCli.exe -SwitchDaemon
+
+minikube version
+
+.\minikube.exe start --driver=hyperv --hyperv-virtual-switch=ExternalWiFi
+
+or 
+
+cmd Run as administrator
+minikube start --vm-driver hyperv --hyperv-virtual-switch "Primary Virtual Switch"
+
+minikube status
+
+kubectl cluster-info
+
+kubectl get node
+
+kubectl docker-env
+
+cd G:\LEARN\PROJECTS\spring-boot-microservices-workshop-master\movie-info-service
+
+docker build -t movie-info-service:1.0 .
+
+kubectl create deployment deploymentname --image=jarfile:version --port=8080
+
+kubectl get deployment
+
+kubectl describe deployment deploymentname
+
+kubectl get pods
+
+kubectl logs podname
+
+kubectl expose deployment deploymentname --type=NodePort
+
+kubectl get service
+
+minikube servicename --url
+
+e.g. access on browser url/message
+
+minikube dashboard
+
+
+
+

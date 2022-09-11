@@ -1,0 +1,22 @@
+#Kafka 
+
+1. Run ZooKeeper
+
+C:\kafka\kafka_2.12-3.2.1\bin\windows>zookeeper-server-start.bat "C:\kafka\kafka_2.12-3.2.1\config\zookeeper.properties"
+
+2. Run Kafka
+
+C:\kafka\kafka_2.12-3.2.1\bin\windows>kafka-server-start.bat "C:\kafka\kafka_2.12-3.2.1\config\server.properties"
+
+3. Create Topic
+
+C:\kafka\kafka_2.12-3.2.1\bin\windows>kafka-topics.bat  --create --topic topic1 --bootstrap-server localhost:9092
+
+4. Create Producer for Topic
+
+C:\kafka\kafka_2.12-3.2.1\bin\windows>kafka-console-producer.bat --topic topic1 --bootstrap-server localhost:9092
+
+5. Create Consumer for Topic
+
+C:\kafka\kafka_2.12-3.2.1\bin\windows>kafka-console-consumer.bat --topic topic1 --from beginning --bootstrap-server localhost:9092
+
